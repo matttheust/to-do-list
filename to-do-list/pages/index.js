@@ -11,7 +11,7 @@ const Home = () => {
     if (savedTasks) {
       setTasks(savedTasks);
     } else {
-      setTasks(['Tarefa 1', 'Tarefa 2', 'Tarefa 3']);
+      setTasks(['Tarefa 1', 'Tarefa 2', 'Tarefa 3']); //Usa esses nomes de padrão, caso não haja itens na lista
     }
   }, []);
 
