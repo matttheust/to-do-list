@@ -7,7 +7,7 @@ Este é um simples aplicativo de lista de tarefas desenvolvido usando React.js e
 - Adicionar novas tarefas.
 - Editar tarefas existentes.
 - Marcar tarefas como concluídas.
-- Excluir tarefas da lista.
+- Excluir tarefas da lista. **(Em Desenvolvimento)**
 
 ## Instalação
 
