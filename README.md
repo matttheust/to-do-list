@@ -16,7 +16,7 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 1. Clone este repositório:
 
 ```
-git clone <[URL_DO_REPOSITORIO](https://github.com/matttheust/to-do-list/)>
+git clone <https://github.com/matttheust/to-do-list/>
 ```
 
 2. Navegue até o diretório do projeto:
