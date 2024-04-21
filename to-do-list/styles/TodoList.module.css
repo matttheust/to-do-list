@@ -4,9 +4,10 @@
   border-radius: 8px;
   padding: 20px;
   display: flex;
-  align-items: right;
   margin-bottom: 0px;
-  width: 250px;
+  width: 280px;
+  height: 44px; /* Ajusta espaçamento do card */
+  
 }
 
 .taskContainer {
@@ -14,11 +15,20 @@
   justify-content: center; /* Centraliza horizontalmente */
 }
 
+.taskName {
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
 .selectedTask {
   background: linear-gradient(136.04deg, #7F00FF -15.75%, #E100FF 122.51%);
   box-shadow: 4px 12px 20px 4px #E100FF36;
 }
 
+.taskList {
+  padding: 0; /* Remove o padding padrão */
+}
 
 .task-text {
   flex-grow: 1;
@@ -28,10 +38,20 @@
   position: relative;
   left: 0px;
   cursor: pointer;
-  
+  top: 30%; /* Move o elemento para o meio vertical*/
 }
 
 .task-arrow img {
   width: 20px;
   height: 20px;
+}
+
+.taskStatus {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7F00FF; /* Cor do texto */
+  margin-bottom: 0; /* Remove o espaçamento abaixo do elemento */
+  margin-top: -40px; /* Move o elemento para cima * como no protótipo */
+  text-align: right; /* Alinha o texto à direita */
 }

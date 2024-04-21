@@ -1,3 +1,12 @@
+.h1{
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.74px;
+  text-align: left;
+  color: #262626;
+}
+
 .titleContainer {
     text-align: left;
   }

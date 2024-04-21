@@ -36,8 +36,8 @@ const TodoList = ({ tasks }) => {
   return (
     <div className={styles.taskContainer}> {/* Container pai */}
       <div>
-        <p>{`${tasksCompleted}/${tasks.length} tasks finalizadas`}</p>
-        <ul>
+      <p className={styles.taskStatus}>{`${tasksCompleted}/${tasks.length} tasks finalizadas`}</p>
+        <ul className={styles.taskList}>
           {tasks.map((task, index) => (
             <li key={index} className={`${styles.task} ${selectedTasks.includes(index) ? styles.selectedTask : ''}`}>
               <input
@@ -45,7 +45,7 @@ const TodoList = ({ tasks }) => {
                 checked={checkedTasks[index]}
                 onChange={() => handleTaskToggle(index)}
               />
-              <span>{task}</span>
+              <span className={styles.taskName}>{task}</span>
               <Link href={`/edit-task?id=${index}`} passHref>
                 <span className={styles.taskArrow}><FontAwesomeIcon icon={faChevronRight} /></span>
               </Link>
