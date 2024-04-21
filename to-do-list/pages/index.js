@@ -1,6 +1,9 @@
+// pages/index.js
 import React, { useState, useEffect } from 'react';
 import TodoList from '../components/TodoList';
 import CreateTaskButton from '../components/CreateTaskButton';
+import Header from '../components/Header';
+import Title from '../components/Title';
 import Link from 'next/link';
 
 const Home = () => {
@@ -19,9 +22,15 @@ const Home = () => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
 
+  // Função para contar o número de tarefas marcadas
+  const countCompletedTasks = () => {
+    return tasks.filter(task => task.completed).length;
+  };
+
   return (
     <div>
-      <h1>Lista de Tarefas</h1>
+      <Header />
+      <Title tasksCompleted={countCompletedTasks()} totalTasks={tasks.length} />
       <TodoList tasks={tasks} />
       <Link href="/add-task">
         <CreateTaskButton />

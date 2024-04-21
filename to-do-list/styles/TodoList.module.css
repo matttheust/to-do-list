@@ -1,0 +1,37 @@
+.task {
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: right;
+  margin-bottom: 0px;
+  width: 250px;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.selectedTask {
+  background: linear-gradient(136.04deg, #7F00FF -15.75%, #E100FF 122.51%);
+  box-shadow: 4px 12px 20px 4px #E100FF36;
+}
+
+
+.task-text {
+  flex-grow: 1;
+}
+
+.taskArrow {
+  position: relative;
+  left: 0px;
+  cursor: pointer;
+  
+}
+
+.task-arrow img {
+  width: 20px;
+  height: 20px;
+}

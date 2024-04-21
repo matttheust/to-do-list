@@ -1,0 +1,23 @@
+.titleContainer {
+    text-align: left;
+  }
+  
+  .titleContainer h1 {
+
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 30px;
+    
+
+  }
+  
+  /* Coloquei -10 para ficar visualmente melhor entre o 1 e o 2 titulo, mas sem alterar o 2 em relação ao objeto abaixo*/
+  .titleContainer h1:first-child {
+    margin-bottom: -10px;
+  }
+  
+  .titleContainer h1:last-child {
+    margin-top: 20px;
+  }
+  
